@@ -34,12 +34,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Initializa codeql
+      - name: Initialize codeql
         uses: github/codeql-action/init@v3
         with:
           languages: javascript-typescript
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
+        uses: github/codeql-action/analyze@v3   
 
   build:
     runs-on: ubuntu-latest
